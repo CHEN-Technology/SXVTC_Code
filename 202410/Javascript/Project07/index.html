@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>体脂率计算器</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1>体脂率计算器</h1>
+			<div>性别</div>
+			<select name="gender" id="select-gender">
+				<option value="male">男</option>
+				<option value="female">女</option>
+			</select>
+
+			<div>体重(kg)</div>
+			<input type="text" placeholder="kg" id="weight" />
+			<div>身高(cm)</div>
+			<input type="text" placeholder="cm" id="height" />
+			<div>年龄（周岁）</div>
+			<input type="text" placeholder="周岁" id="age" />
+			<input type="submit" value="查询" id="submit" onclick="calculateBFR()" />
+			<div id="result">您的体脂率(BFR)：<span id="bfr">等待计算结果</span></div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	background-color: red;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 70vw;
+	margin: auto;
+}
+
+main div {
+	background-color: cornflowerblue;
+	padding: 50px;
+	margin: 50px;
+}
+
+main div h2 {
+	margin-bottom: 10px;
+}
+
+main div img {
+	margin-top: 20px;
+	width: 320px;
+	height: 240px;
+}

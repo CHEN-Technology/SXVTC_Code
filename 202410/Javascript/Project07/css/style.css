@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+main {
+	position: fixed;
+	left: 50vw;
+	right: 50vh;
+	transform: translate(-20vw, 0);
+	display: flex;
+	width: 40vw;
+	height: 60vh;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	color: rgb(97, 97, 97);
+	/* background-color: red; */
+}
+
+main h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+main div {
+	background-color: #f2f2f2;
+	width: 34%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: x-large;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 5px 0;
+	margin-bottom: 15px;
+}
+
+main select {
+	width: 65%;
+	height: 60px;
+	padding-left: 3%;
+	font-size: x-large;
+	color: #3b3b3b;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: 1px solid #ccc;
+	border-left: none;
+	margin-bottom: 15px;
+}
+
+main input {
+	width: 65%;
+	height: 60px;
+	padding-left: 3%;
+	font-size: x-large;
+	box-sizing: border-box;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: 1px solid #ccc;
+	border-left: none;
+	margin-bottom: 15px;
+}
+
+main #submit {
+	color: white;
+	font-size: x-large;
+	background-color: #5375d7;
+	border-radius: 8px;
+	width: 100px;
+	display: inline-block;
+	padding-right: 10px;
+	margin-bottom: 5px;
+}
+
+main #submit:hover {
+	cursor: pointer;
+	box-shadow: 1px 1px 5px #5375d7;
+}
+
+main #result {
+	color: black;
+	display: inline-block;
+	border-radius: 0;
+	width: 100%;
+	border: 0;
+	background-color: transparent;
+}
+
+main #result #bfr {
+	color: #ccc;
+}

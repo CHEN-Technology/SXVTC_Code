@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 70%;
+	margin: auto;
+	/* background-color: rebeccapurple; */
+}
+
+main #title {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	width: 22%;
+	margin-right: auto;
+	border-bottom: 8px solid black;
+}
+
+main #title h3 {
+	font-weight: bold;
+}
+
+main #charactersBox {
+	display: inherit;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+main #charactersBox .characters {
+	display: inherit;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	background-color: #5b5653;
+	color: white;
+	width: 47%;
+	margin: 1.5%;
+}
+
+main #charactersBox .characters .imgBox {
+	display: inherit;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 20%;
+	margin: 5%;
+}
+
+main #charactersBox .characters .imgBox img {
+	vertical-align: bottom;
+	width: 100%;
+}
+
+main #charactersBox .characters .textBox {
+	display: inherit;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	width: 58%;
+	margin-right: 12%;
+	vertical-align: top;
+}
+
+main #charactersBox .characters .textBox .characterName {
+	width: 70%;
+	padding: 8% 0 5% 0;
+	font-weight: 400;
+	border-bottom: 3px solid white;
+}
+
+main #charactersBox .characters .textBox .introduction {
+	font-size: 12px;
+	margin-top: 2.5%;
+}
