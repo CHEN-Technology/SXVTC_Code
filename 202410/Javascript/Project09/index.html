@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<main>
+			<div id="result">您所需水果的报价为：<span id="price"></span></div>
+			<input
+				type="text"
+				id="fruitName"
+				placeholder="请输入您需要查询的水果名称"
+			/>
+			<input
+				type="submit"
+				id="submit"
+				value="查询报价"
+				onclick="javascript:getFruitPrice()"
+			/>
+		</main>
+	</body>
+</html>
