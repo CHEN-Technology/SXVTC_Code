@@ -13,7 +13,10 @@ window.onload = function atmSimulation() {
 			return; // 正确后退出函数
 		} else {
 			attempts--;
-			alert(`密码错误，您还有 ${attempts} 次机会`);
+			if (attempts == 0) {
+				alert("您已输入错误密码三次，程序结束。");
+			}
+			alert(`您还有 ${attempts} 次机会.`);
 		}
 	}
 
