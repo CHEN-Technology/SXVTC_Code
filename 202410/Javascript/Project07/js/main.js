@@ -13,7 +13,7 @@ function calculateBFR() {
 		var height = parseInt(document.getElementById("height").value) / 100; //获取身高
 		// console.log(height); //打印身高
 		var BMI = weight / (height * height); //计算BMI
-		var sex = gender == "男" ? 1 : 0; //判断性别
+		var sex = gender == "male" ? 1 : 0; //判断性别
 		var BFR = 1.2 * BMI + 0.23 * age - 5.4 - 10.8 * sex; //计算BFR
 		document.getElementById("bfr").innerHTML = BFR.toFixed(2) + "%"; //显示BFR
 		document.getElementById("bfr").style.color =
