@@ -1,6 +1,6 @@
 window.onload = function () {
 	const elementTable1 = document.getElementById("table1");
-	for (let i = 9; i >= 0; i--) {
+	for (let i = 9; i >= 1; i--) {
 		const row = elementTable1.insertRow(); // 创建新行
 		for (let j = 1; j <= i; j++) {
 			const cell = row.insertCell(); // 创建新单元格

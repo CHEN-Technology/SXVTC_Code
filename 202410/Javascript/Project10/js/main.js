@@ -24,47 +24,36 @@ function getRestrictions(day, number) {
 	switch (day) {
 		case 1:
 			restrictions = "今天是周一，禁止行驶的车牌号码为：1,9";
-			if (number == "1" || number == "9") {
-				restrictions = restrictions + "\n您输入的车牌号码已被禁止行驶！";
-			} else {
-				restrictions = restrictions + "\n您输入的车牌号码没有被禁止行驶！";
-			}
+			restrictions = checkRestrictions("1", "9", number, restrictions);
 			break;
 		case 2:
 			restrictions = "今天是周二，禁止行驶的车牌号码为：2,8";
-			if (number == "2" || number == "8") {
-				restrictions = restrictions + "\n您输入的车牌号码已被禁止行驶！";
-			} else {
-				restrictions = restrictions + "\n您输入的车牌号码没有被禁止行驶！";
-			}
+			restrictions = checkRestrictions("2", "8", number, restrictions);
 			break;
 		case 3:
 			restrictions = "今天是周三，禁止行驶的车牌号码为：3,7";
-			if (number == "3" || number == "7") {
-				restrictions = restrictions + "\n您输入的车牌号码已被禁止行驶！";
-			} else {
-				restrictions = restrictions + "\n您输入的车牌号码没有被禁止行驶！";
-			}
+			restrictions = checkRestrictions("3", "7", number, restrictions);
 			break;
 		case 4:
 			restrictions = "今天是周四，禁止行驶的车牌号码为：4,6";
-			if (number == "4" || number == "6") {
-				restrictions = restrictions + "\n您输入的车牌号码已被禁止行驶！";
-			} else {
-				restrictions = restrictions + "\n您输入的车牌号码没有被禁止行驶！";
-			}
+			restrictions = checkRestrictions("4", "6", number, restrictions);
 			break;
 		case 5:
 			restrictions = "今天是周五，禁止行驶的车牌号码为：5,0";
-			if (number == "5" || number == "0") {
-				restrictions = restrictions + "\n您输入的车牌号码已被禁止行驶！";
-			} else {
-				restrictions = restrictions + "\n您输入的车牌号码没有被禁止行驶！";
-			}
+			restrictions = checkRestrictions("5", "0", number, restrictions);
 			break;
 		default:
 			restrictions = "今天是周末，没有禁止行驶的车牌号码";
 			break;
 	}
 	alert(restrictions);
+}
+
+function checkRestrictions(x, y, number, restrictions) {
+	if (number == x || number == y) {
+		restrictions = restrictions + "\n您输入的车牌号码已被禁止行驶！";
+	} else {
+		restrictions = restrictions + "\n您输入的车牌号码没有被禁止行驶！";
+	}
+	return restrictions;
 }
