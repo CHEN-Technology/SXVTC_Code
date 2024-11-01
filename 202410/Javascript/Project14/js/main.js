@@ -10,10 +10,10 @@ if (score >= 0 && score <= 100) {
 			alert("您的成绩分为良好！");
 			break;
 		case 7:
-			alert("您的成绩分为及格！");
+			alert("您的成绩分为中等！");
 			break;
 		case 6:
-			alert("您的成绩分为不及格！");
+			alert("您的成绩分为及格！");
 			break;
 		default:
 			alert("您的成绩分为不及格！");
