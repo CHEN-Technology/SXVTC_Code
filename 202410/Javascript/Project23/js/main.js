@@ -5,8 +5,8 @@ function inputScore(i) {
 	if (i >= 10) {
 		// console.log("每个人的成绩：" + arr.join(", "));
 		console.log("平均分：" + (sum / 10).toFixed(2));
-		console.log("最高分：" + Math.max(...arr));
-		console.log("最低分：" + Math.min(...arr));
+		console.log("最高分：" + Math.max(...arr).toFixed(2));
+		console.log("最低分：" + Math.min(...arr).toFixed(2));
 		return;
 	}
 
