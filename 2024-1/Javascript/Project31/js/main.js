@@ -30,11 +30,7 @@ function simpleCalculator(operation, num1, num2) {
 }
 
 window.onload = function calculate() {
-	let userInput = {
-		operation: "",
-		num1: null,
-		num2: null,
-	};
+	let userInput = {};
 
 	userInput.operation = prompt("请输入运算符号（+-*/%）：", "");
 
