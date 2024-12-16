@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.imgBox {
+	width: 128px;
+	height: 72px;
+	cursor: pointer;
+}
+
+.imgBox img {
+	width: 100%;
+}
+
+.imgFullBox {
+	width: 50vw;
+	height: 50vh;
+	transform: translate(10%, 0);
+	display: none;
+}
