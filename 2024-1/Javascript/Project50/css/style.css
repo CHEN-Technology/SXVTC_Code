@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main {
+	margin: 10px;
+	position: relative;
+}
+
+.main .smallBox {
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: red;
+	cursor: pointer;
+}
+
+.main .smallBox .zoom {
+	width: 235px;
+	height: 235px;
+	position: absolute;
+	display: none;
+	background-color: #ffffcc;
+	opacity: 0.5;
+	border: 1px solid #ccc;
+}
+
+.main .bigBox {
+	width: 540px;
+	height: 540px;
+	position: absolute;
+	left: 350px;
+	display: none;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
