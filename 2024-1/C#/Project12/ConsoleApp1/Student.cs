@@ -10,11 +10,7 @@ namespace ConsoleApp1
         public string Name { get => name; set => name = value; }
         public float Score { get => score; set => score = value; }
 
-        public Student()
-        {
-            name = "张三";
-            score = 20;
-        }
+        public Student(){}
 
         public Student(string name, float score)
         {
