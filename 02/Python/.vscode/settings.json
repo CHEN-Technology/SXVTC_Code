@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    }
+}
